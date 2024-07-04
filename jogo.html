@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campo de Futebol</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .field-container {
+            margin-right: 20px; /* Espaço entre o campo e a tabela */
+        }
+
+        .field {
+            border: 2px solid #1c1c1c;
+            width: 600px;
+            height: 360px;
+            position: relative;
+            background-color: #4CAF50; /* Green */
+            margin-bottom: 20px;
+        }
+
+        .goal {
+            background-color: #000000; /* Red */
+            width: 20px;
+            height: 100px;
+            position: absolute;
+            left: 20px;
+            top: 130px;
+            border: 5px;
+            border-color: antiquewhite;
+        }
+
+        .player {
+            background-color: #f3ec21; /* Blue */
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            border-radius: 50%;
+        }
+
+        .player:nth-child(1) {
+            top: 180px;
+            left: 20px;
+        }
+
+        .player:nth-child(2) {
+            top: 100px;
+            left: 20px;
+        }
+
+        .player:nth-child(3) {
+            top: 260px;
+            left: 120px;
+        }
+
+        .player:nth-child(4) {
+            top: 60px;
+            left: 120px;
+        }
+
+        .player:nth-child(5) {
+            top: 180px;
+            left: 300px;
+        }
+
+        .player:nth-child(6) {
+            top: 100px;
+            left: 300px;
+        }
+
+        .player:nth-child(7) {
+            top: 260px;
+            left: 400px;
+        }
+
+        .player:nth-child(8) {
+            top: 60px;
+            left: 400px;
+        }
+
+        .player:nth-child(9) {
+            top: 130px;
+            left: 500px;
+        }
+
+        .player:nth-child(10) {
+            top: 230px;
+            left: 500px;
+        }
+
+        .player:nth-child(11) {
+            top: 180px;
+            left: 520px;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        input[type="text"] {
+            width: calc(100% - 16px);
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin: 4px 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="field-container">
+            <div class="field">
+                <div class="goal"></div>
+                <div class="player"></div> <!-- Goleiro -->
+                <div class="player"></div> <!-- Lateral esquerdo -->
+                <div class="player"></div> <!-- Zagueiro 1 -->
+                <div class="player"></div> <!-- Zagueiro 2 -->
+                <div class="player"></div> <!-- Lateral direito -->
+                <div class="player"></div> <!-- Meio-campo esquerdo -->
+                <div class="player"></div> <!-- Meio-campo direito -->
+                <div class="player"></div> <!-- Meio-campo central 1 -->
+                <div class="player"></div> <!-- Meio-campo central 2 -->
+                <div class="player"></div> <!-- Atacante 1 -->
+                <div class="player"></div> <!-- Atacante 2 -->
+            </div>
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <th>#</th>
+                    <th>Nome do Jogador</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><input type="text" id="nome1" placeholder="Guarda-Redes"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><input type="text" id="nome2" placeholder="Defesa Esquerdo"></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><input type="text" id="nome3" placeholder="Defesa Central"></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><input type="text" id="nome4" placeholder="Defesa Central"></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><input type="text" id="nome5" placeholder="Defesa Direito"></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td><input type="text" id="nome6" placeholder="Meio-campo Esquerdo"></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td><input type="text" id="nome7" placeholder="Meio-campo Direito"></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td><input type="text" id="nome8" placeholder="Meio-campo Central "></td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td><input type="text" id="nome9" placeholder="Meio-campo Central "></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td><input type="text" id="nome10" placeholder="Atacante 1"></td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td><input type="text" id="nome11" placeholder="Atacante 2"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+   <!--- basic page needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>TG SPORTS+</title>
+	<meta name="description" content="">  
+	<meta name="author" content="">
+
+   <!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="css/base.css">
+   <link rel="stylesheet" href="css/vendor.min.css">
+   <link rel="stylesheet" href="css/main.css">     
+
+   <!-- script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+
+ 
+	
+
+</head>
+
+<body>
+
+	<!-- header
+   ================================================== -->
+   <header id="main-header">
+
+   	<div class="row">
+
+      
+		
+
+	      <nav id="nav-wrap">         
+	         
+	         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">
+	         	<span class="menu-icon">Menu</span>
+	         </a>
+         	<a class="mobile-btn" href="#" title="Hide navigation">
+         		<span class="menu-icon">Menu</span>
+         	</a>   
+			<div id="logo">
+				<a href="#hero"><img src="Logotg1.png" alt="Your Logo"></a>
+		 	</div>         
+
+	         <ul id="nav" class="nav">
+	            <li><a class="smoothscroll" href="#hero">Inicio</a></li>
+				<li><a class="smoothscroll" href="#history">História</a></li>
+		         <li class="current"><a class="smoothscroll" href="#portfolio">Ligas</a></li>
+	            <li><a class="smoothscroll" href="#services">Clubes</a></li>
+	            <li><a class="smoothscroll" href="#about">Prémios</a></li>
+	            <li><a class="smoothscroll" href="#contact">Contactos</a></li>
+				<li><a class="smoothscroll" href="file:///C:/Users/Aluno/Documents/MoreFUT/Conta.html">Conta</a></li>
+	         </ul> <!-- end #nav -->
+
+	      </nav> <!-- end #nav-wrap -->
+
+		  
+
+	      <ul class="header-social">
+	        	
+	        	<li><a href=https://twitter.com/TGomes74"#"><i class="fa fa-twitter"></i></a></li>
+	        	<li><a href=https://gmail.google.com"#"><i class="fa fa-google-plus"></i></a></li>
+	      </ul>      
+
+	   </div>
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="loginForm">
+            <h2>Login</h2>
+            <form action="login.php" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <input type="submit" value="Login">
+            </form>
+        </div>
+        <div id="registerForm" style="display: none;">
+            <h2>Register</h2>
+            <form action="register.php" method="post">
+                <label for="newUsername">New Username:</label>
+                <input type="text" id="newUsername" name="newUsername" required>
+                <label for="newPassword">New Password:</label>
+                <input type="password" id="newPassword" name="newPassword" required>
+                <input type="submit" value="Register">
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Adicione este script para lidar com a exibição do modal -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var modal = document.getElementById("loginModal");
+        var loginLink = document.querySelector("#nav #Conta");
+        var closeBtn = document.querySelector(".close");
+
+        loginLink.addEventListener("click", function () {
+            modal.style.display = "block";
+        });
+
+        closeBtn.addEventListener("click", function () {
+            modal.style.display = "none";
+        });
+
+        window.addEventListener("click", function (event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        });
+    });
+</script>
